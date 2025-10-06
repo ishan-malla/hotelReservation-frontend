@@ -5,6 +5,7 @@ import Hero from "./Sections/Hero";
 import Testomonial from "./Sections/Testomonial";
 import RoomShowCase from "./Sections/RoomShowCase";
 import ContactUs from "./Sections/ContactUs";
+import Footer from "@/components/Footer";
 
 const Landing = () => {
   return (
@@ -16,6 +17,7 @@ const Landing = () => {
       <CTA></CTA>
       <FAQ></FAQ>
       <ContactUs></ContactUs>
+      <Footer></Footer>
     </div>
   );
 };

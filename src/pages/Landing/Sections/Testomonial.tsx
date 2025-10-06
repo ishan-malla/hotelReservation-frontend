@@ -28,7 +28,7 @@ export default function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="w-full py-16 md:py-24 lg:py-32 bg-white text-gray-900"
+      className="w-full py-16 md:py-24 lg:py-32  text-gray-900 bg-gray-100"
     >
       <div className="container mx-auto px-4 md:px-6">
         {/* Heading */}
