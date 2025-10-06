@@ -1,8 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { Link } from "react-router";
 import RoomCard from "@/components/RoomCard";
 
-// Mock data (you’ll later fetch this from your backend)
 const rooms = [
   {
     roomName: "Deluxe Sea View",
@@ -36,24 +35,6 @@ const rooms = [
 
 export default function RoomShowcaseSection() {
   const scrollRef = useRef(null);
-
-  useEffect(() => {
-    const container = scrollRef.current;
-    if (!container) return;
-
-    const scroll = () => {
-      container.scrollBy({ left: 1, behavior: "smooth" });
-      if (
-        container.scrollLeft + container.clientWidth >=
-        container.scrollWidth - 1
-      ) {
-        container.scrollTo({ left: 0, behavior: "smooth" });
-      }
-    };
-
-    const interval = setInterval(scroll, 30);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <section className="w-full py-16 md:py-24 bg-white text-gray-900">

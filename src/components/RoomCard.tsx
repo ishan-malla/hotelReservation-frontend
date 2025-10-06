@@ -1,6 +1,17 @@
 import { Link } from "react-router";
 
-export default function RoomCard({ roomName, roomType, price, image }) {
+type RoomCardProp = {
+  roomName: string;
+  roomType: string;
+  price: number;
+  image: string;
+};
+export default function RoomCard({
+  roomName,
+  roomType,
+  price,
+  image,
+}: RoomCardProp) {
   return (
     <div className="min-w-[280px] md:min-w-[340px] bg-gradient-to-br from-gray-900 via-gray-800 to-black rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200 flex-shrink-0 text-white">
       <div className="relative h-48 w-full">

@@ -4,6 +4,7 @@ import FAQ from "./Sections/FAQ";
 import Hero from "./Sections/Hero";
 import Testomonial from "./Sections/Testomonial";
 import RoomShowCase from "./Sections/RoomShowCase";
+import ContactUs from "./Sections/ContactUs";
 
 const Landing = () => {
   return (
@@ -14,6 +15,7 @@ const Landing = () => {
       <Testomonial></Testomonial>
       <CTA></CTA>
       <FAQ></FAQ>
+      <ContactUs></ContactUs>
     </div>
   );
 };
