@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="https://publisher-publish.s3.eu-central-1.amazonaws.com/pb-nepalitimes/swp/asv65r/media/20250925100936_bc34cc7837cb4599e3a9b1079e3bfb04e36e18c1e8453c386cd861074006a88b.jpg"
+          src="https://x3jh6o6w.cdn.imgeng.in/assets/uploads/Starhotels-Collezione/Savoia-Excelsior-Palace/DESIGN-HISTORY-PHILOSOPHY/Four-star-hotel-in-central-Trieste-Savoia-Excelsior-Palace-Trieste-Hall-4.jpg?imgeng=/w_1440"
           alt="Hotel Kathmandu"
           className="w-full h-full object-cover brightness-75"
         />
@@ -20,7 +20,7 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="flex-1 text-center md:text-left max-w-xl">
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4 ">
             Stay in Comfort at Hotel Kathmandu
           </h1>
           <p className="text-lg md:text-xl text-gray-200">
