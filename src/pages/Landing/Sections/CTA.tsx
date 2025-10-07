@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export default function CTASection() {
   return (
     <section
-      className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white flex justify-center"
+      className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-500 text-white flex justify-center"
       aria-labelledby="cta-heading"
     >
       <div className="container px-4 md:px-6">
