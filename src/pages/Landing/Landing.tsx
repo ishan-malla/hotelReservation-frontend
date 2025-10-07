@@ -8,8 +8,12 @@ import ContactUs from "./Sections/ContactUs";
 import Footer from "@/components/Footer";
 import Facilities from "./Sections/Facilities";
 import AboutUs from "./Sections/AboutUs";
+import { useGetRoomsQuery } from "@/api/hotelSlice";
 
 const Landing = () => {
+  const { data: rooms } = useGetRoomsQuery();
+  console.log(import.meta.env.VITE_BASE_URL);
+  console.log(rooms);
   return (
     <div className="w-screen h-screen">
       <Navbar></Navbar>
