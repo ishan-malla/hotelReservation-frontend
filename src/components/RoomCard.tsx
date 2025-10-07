@@ -13,7 +13,7 @@ export default function RoomCard({
   image,
 }: RoomCardProp) {
   return (
-    <div className="min-w-[280px] md:min-w-[340px] bg-gradient-to-br from-gray-900 via-gray-800 to-black rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200 flex-shrink-0 text-white">
+    <div className="min-w-[280px] md:min-w-[340px] rounded-2xl overflow-hidden shadow-md hover:shadow-xl  transition-shadow duration-300 border border-gray-200 flex-shrink-0 text-white">
       <div className="relative h-48 w-full">
         <img
           src={image || "/placeholder.svg"}
@@ -23,8 +23,8 @@ export default function RoomCard({
       </div>
       <div className="p-4">
         <h3 className="font-semibold text-lg">{roomName}</h3>
-        <p className="text-sm text-gray-300 mb-2">{roomType}</p>
-        <p className="text-lg font-bold text-white">
+        <p className="text-sm text-black mb-2">{roomType}</p>
+        <p className="text-lg font-bold text-black">
           NPR {price.toLocaleString()}
         </p>
 

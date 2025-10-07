@@ -3,34 +3,39 @@ import FAQItem from "@/components/FAQItem";
 export default function FAQSection() {
   const faqs = [
     {
-      question: "How do I list my place?",
+      question: "How do I book a room?",
       answer:
-        "Sign up, click 'List Your Space,' and follow the steps to upload photos, add details, and set pricing. You can manage everything from your dashboard.",
+        "You can book directly through our website by selecting your dates, choosing a room type, and completing the secure checkout process.",
     },
     {
-      question: "Is payment secure?",
+      question: "What time is check-in and check-out?",
       answer:
-        "Yes. All transactions use bank-grade encryption and fraud protection for safe payments between hosts and renters.",
+        "Check-in begins at 3 PM and check-out is by 11 AM. Early check-in or late check-out may be available upon request.",
     },
     {
-      question: "How are users verified?",
+      question: "Is breakfast included?",
       answer:
-        "We verify users through ID checks and rental history to ensure trust and safety for everyone.",
+        "Yes, a complimentary breakfast is included with every stay. We offer a variety of hot and cold options served daily from 7–10 AM.",
     },
     {
-      question: "What if there’s a problem?",
+      question: "Do you offer free Wi-Fi?",
       answer:
-        "Our support team is available 24/7 to help solve issues or disputes quickly and fairly.",
+        "Yes, high-speed Wi-Fi is available throughout the hotel and is free for all guests.",
     },
     {
-      question: "Can I edit my listing?",
+      question: "Is parking available?",
       answer:
-        "Yes, you can update photos, pricing, or availability anytime. Changes show up instantly.",
+        "Yes, we offer free on-site parking for guests. Valet service is also available for an additional fee.",
     },
     {
-      question: "What if someone cancels?",
+      question: "Are pets allowed?",
       answer:
-        "Refunds depend on your chosen policy. You can pick a flexible, moderate, or strict option while listing.",
+        "Yes, we are a pet-friendly hotel. A small cleaning fee may apply. Please contact us in advance for specific pet policies.",
+    },
+    {
+      question: "Can I cancel or modify my reservation?",
+      answer:
+        "Yes, cancellations and modifications are allowed based on the rate plan you selected. Please review the cancellation policy when booking or contact us for assistance.",
     },
   ];
 
