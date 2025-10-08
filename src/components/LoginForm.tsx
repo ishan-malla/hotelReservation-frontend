@@ -111,7 +111,7 @@ export default function LoginForm() {
       {/* Register Link */}
       <div className="text-center mt-4">
         <p className="text-sm text-gray-600">
-          <Link to="/sign-up">
+          <Link to="/signup">
             <button
               type="button"
               className="text-blue-600 hover:underline font-medium"
