@@ -2,7 +2,10 @@ import ContactForm from "@/components/ContactForm";
 
 const ContactUs = () => {
   return (
-    <section className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-12">
+    <section
+      id="contactUs"
+      className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-12"
+    >
       <div className="text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
           We’d love to hear from you!
