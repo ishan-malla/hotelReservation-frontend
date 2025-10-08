@@ -4,14 +4,12 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          src="https://x3jh6o6w.cdn.imgeng.in/assets/uploads/Starhotels-Collezione/Savoia-Excelsior-Palace/DESIGN-HISTORY-PHILOSOPHY/Four-star-hotel-in-central-Trieste-Savoia-Excelsior-Palace-Trieste-Hall-4.jpg?imgeng=/w_1440"
-          alt="Hotel Kathmandu"
-          className="w-full h-full object-cover brightness-75"
-        />
-      </div>
+    <section className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden group">
+      <img
+        src="https://x3jh6o6w.cdn.imgeng.in/assets/uploads/Starhotels-Collezione/Savoia-Excelsior-Palace/DESIGN-HISTORY-PHILOSOPHY/Four-star-hotel-in-central-Trieste-Savoia-Excelsior-Palace-Trieste-Hall-4.jpg?imgeng=/w_1440"
+        alt="Hotel Kathmandu"
+        className="absolute inset-0 w-full h-full object-cover brightness-75"
+      />
 
       <motion.div
         className="relative z-10 container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10 text-white"
@@ -30,11 +28,8 @@ const Hero = () => {
         </div>
 
         <div className="flex-1 flex justify-center md:justify-end">
-          <Link to="/book">
-            <Button
-              className="bg-white text-gray-900 hover:bg-gray-200 px-8 py-4 text-lg rounded-xl font-medium shadow-lg transition-transform hover:scale-105"
-              aria-label="Book your stay at Hotel Kathmandu"
-            >
+          <Link to="/rooms">
+            <Button className="bg-white text-gray-900 hover:bg-gray-200 px-8 py-4 text-lg rounded-xl font-semibold shadow-lg transform opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               Book Now
             </Button>
           </Link>

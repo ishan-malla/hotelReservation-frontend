@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import CTA from "./Sections/CTA";
 import FAQ from "./Sections/FAQ";
 import Hero from "./Sections/Hero";
-import Testomonial from "./Sections/Testomonial";
+import Testomonial from "./Sections/Testimonial";
 import RoomShowCase from "./Sections/RoomShowCase";
 import ContactUs from "./Sections/ContactUs";
 import Footer from "@/components/Footer";

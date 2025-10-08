@@ -10,11 +10,11 @@ const photos = [
 const About = () => {
   return (
     <div className="bg-gray-50 text-gray-800">
-      <section className="max-w-6xl mx-auto py-16 px-6">
+      <section id="aboutUs" className="max-w-6xl mx-auto py-16 px-6">
         <h2 className="text-4xl font-semibold text-center mb-10 ">
           Our Heritage Story
         </h2>
-        <div className="flex gap-15">
+        <div className=" flex-col md:flex-row gap-15 ">
           <div>
             <h3 className="text-2xl font-semibold  mb-5">
               Background and History
@@ -69,7 +69,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Location Section */}
       <section className="bg-gray-100 py-16">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-6">Our Location</h2>
@@ -96,7 +95,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Photo Gallery */}
       <section className="max-w-6xl mx-auto py-16 px-6">
         <h2 className="text-3xl font-semibold text-center mb-10">
           Glimpses of Elegance
