@@ -9,7 +9,7 @@ export default function HotelNavbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="flex sticky top-0 z-50 w-full bg-gradient-to-br from-blue-800 via-blue-700 to-blue-600 text-white backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-md">
+    <header className="flex sticky top-0 z-50 w-full  text-white bg-blue-600 shadow-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link to="/" className="flex flex-col items-center shrink-0">
           <span className="ml-2 text-lg font-bold text-white">Hotel</span>

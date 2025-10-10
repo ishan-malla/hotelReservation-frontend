@@ -1,34 +1,14 @@
+import { useGetTestimonialQuery } from "@/api/hotelSlice";
 import TestimonialCard from "@/components/TestomonialCard";
 
 export default function TestimonialsSection() {
-  const testimonials = [
-    {
-      guestName: "Aarav Sharma",
-      roomName: "Deluxe Ocean View Room",
-      feedback:
-        "The view was absolutely stunning, and the staff were incredibly friendly. Will definitely return!",
-      rating: 5,
-    },
-    {
-      guestName: "Mina Rai",
-      roomName: "Executive Suite",
-      feedback:
-        "Spacious and well-designed suite. The breakfast spread was top-notch!",
-      rating: 4,
-    },
-    {
-      guestName: "Kiran Thapa",
-      roomName: "Standard Room",
-      feedback:
-        "Affordable and clean with great service. Perfect for short stays!",
-      rating: 4,
-    },
-  ];
+  const { data: testimonials = [] } = useGetTestimonialQuery();
 
+  console.log(testimonials);
   return (
     <section
       id="testimonials"
-      className="w-full py-16 md:py-24 lg:py-32  text-gray-900 bg-gray-100"
+      className="w-full py-16 md:py-24 lg:py-32 text-gray-900 bg-gray-100"
     >
       <div className="container mx-auto px-4 md:px-6">
         {/* Heading */}
@@ -44,15 +24,17 @@ export default function TestimonialsSection() {
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((t, i) => (
-            <TestimonialCard
-              key={i}
-              guestName={t.guestName}
-              roomName={t.roomName}
-              feedback={t.feedback}
-              rating={t.rating}
-            />
-          ))}
+          {testimonials.map((t, i) => {
+            return (
+              <TestimonialCard
+                key={i}
+                guestName={t.customer_name}
+                roomName={"Deluxe"}
+                feedback={t.comment}
+                rating={t.rating}
+              />
+            );
+          })}
         </div>
       </div>
     </section>

@@ -21,9 +21,9 @@ export default function TestimonialCard({
         <p className="text-sm text-gray-500">{roomName}</p>
       </div>
 
-      {/* Feedback Content */}
+      {/* Feedback */}
+      <p className="text-gray-700 italic">“{feedback}”</p>
 
-      <p className="text-gray-700 italic  ">&quot;{feedback}&quot;</p>
       {/* Star Rating */}
       <div className="flex mb-2">
         {[...Array(5)].map((_, i) => (

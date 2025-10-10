@@ -52,7 +52,6 @@ export default function SignUpForm() {
 
   const onSubmit = (values: SignUpFormData) => {
     console.log("Sign Up Form submitted:", values);
-    // Add your signup API logic here
   };
 
   return (

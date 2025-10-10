@@ -1,10 +1,11 @@
-const photos = [
-  "/images/hotel-front.jpg",
-  "/images/hotel-lobby.jpg",
-  "/images/hotel-room.jpg",
-  "/images/hotel-garden.jpg",
-  "/images/hotel-dining.jpg",
-  "/images/hotel-balcony.jpg",
+import ImageSlider from "@/components/ImageSlider";
+
+const images = [
+  "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+  "https://m.ahstatic.com/is/image/accorhotels/HCM_P_8147067:4by3?fmt=jpg&op_usm=1.75,0.3,2,0&resMode=sharp2&iccEmbed=true&icc=sRGB&dpr=on,1.5&wid=335&hei=251&qlt=80",
+  "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+  "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
 ];
 
 const About = () => {
@@ -95,24 +96,11 @@ const About = () => {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto py-16 px-6">
-        <h2 className="text-3xl font-semibold text-center mb-10">
-          Glimpses of Elegance
+      <section className="py-16 bg-gray-50">
+        <h2 className="text-center text-3xl font-bold mb-8">
+          Explore Our Gallery
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {photos.map((src, index) => (
-            <div
-              key={index}
-              className="overflow-hidden rounded-2xl shadow-lg group"
-            >
-              <img
-                src={src}
-                alt={`Hotel Kathmandu  ${index}`}
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform"
-              />
-            </div>
-          ))}
-        </div>
+        <ImageSlider images={images} speed={2} />
       </section>
     </div>
   );
