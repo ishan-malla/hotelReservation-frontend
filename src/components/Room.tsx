@@ -1,6 +1,8 @@
+import { Link } from "react-router";
+
 const Room = () => {
   return (
-    <article className="flex flex-col items-center px-4 md:px-0 mt-16">
+    <article className="flex flex-col items-center px-4 md:px-0 mt-16 relative">
       {/* Header */}
       <header className="flex flex-col gap-2 w-full md:w-1/2">
         {/* Room Image */}
@@ -29,9 +31,11 @@ const Room = () => {
               </p>
             </div>
 
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition">
-              Book Now
-            </button>
+            <Link to="/room-">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition">
+                Book Now
+              </button>
+            </Link>
           </div>
         </div>
       </header>

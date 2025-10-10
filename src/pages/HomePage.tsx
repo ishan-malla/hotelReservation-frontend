@@ -1,4 +1,6 @@
+// import RoomDisplayCard from "@/components/RoomDisplayCard";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return <div>/</div>;
 };
 export default HomePage;
