@@ -2,7 +2,8 @@ import type {
   FAQResponse,
   GetRoomResponse,
   contactUsRequest,
-  hotelAmenities,
+  HotelAmenities,
+  TestimonyResponse,
 } from "@/types/types";
 import { apiSlice } from "./apiSlice";
 
@@ -12,20 +13,23 @@ export const hotelApi = apiSlice.injectEndpoints({
       query: () => "/api/rooms",
     }),
 
-    getHotelAmenities: builder.query<hotelAmenities[], void>({
+    getHotelAmenities: builder.query<HotelAmenities[], void>({
       query: () => "/api/hotelAmenities",
     }),
 
-    getFaqList: builder.query<FAQResponse, void>({
+    getFaqList: builder.query<FAQResponse[], void>({
       query: () => "/api/faq",
     }),
 
-    contactUs: builder.mutation<void, contactUsRequest>({
+    AddContactUs: builder.mutation<void, contactUsRequest>({
       query: (contactUs) => ({
         url: "/api/contactUs",
         method: "POST",
         body: contactUs,
       }),
+    }),
+    getTestimonial: builder.query<TestimonyResponse[], void>({
+      query: () => "/api/testimony",
     }),
   }),
 });
@@ -34,5 +38,6 @@ export const {
   useGetRoomsQuery,
   useGetHotelAmenitiesQuery,
   useGetFaqListQuery,
-  useContactUsMutation,
+  useAddContactUsMutation,
+  useGetTestimonialQuery,
 } = hotelApi;

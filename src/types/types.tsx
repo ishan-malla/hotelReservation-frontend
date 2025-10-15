@@ -25,12 +25,20 @@ export interface contactUsRequest {
 }
 
 export interface FAQResponse {
+  faq_id: number;
   faq_questions: string;
   faq_answers: string;
 }
 
-export interface hotelAmenities {
+export interface HotelAmenities {
   hotel_amenity_id: number;
-  hotel_amenitiy_name: string;
-  hotel_amenitiy_description: string;
+  hotel_amenity_name: string;
+  hotel_amenity_description: string;
+  hotel_amenity_image: string;
+}
+
+export interface TestimonyResponse {
+  comment: string;
+  rating: number;
+  customer_name: string;
 }
