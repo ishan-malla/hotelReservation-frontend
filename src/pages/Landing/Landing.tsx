@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/pages/Landing/Sections/Navbar";
 import CTA from "./Sections/CTA";
 import FAQ from "./Sections/FAQ";
 import Hero from "./Sections/Hero";

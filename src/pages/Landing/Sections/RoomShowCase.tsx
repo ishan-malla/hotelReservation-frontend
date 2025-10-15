@@ -2,6 +2,7 @@ import { useRef } from "react";
 import RoomCard from "@/components/RoomCard";
 import { useGetRoomsQuery } from "@/api/hotelSlice";
 import type { Room } from "@/types/types";
+import { Link } from "react-router";
 
 export default function RoomShowcaseSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -43,11 +44,11 @@ export default function RoomShowcaseSection() {
         </div>
 
         <div className="flex justify-center mt-12">
-          <a href="/rooms">
-            <button className="text-white px-8 py-3 text-lg rounded-lg transition bg-gray-900">
+          <Link to="/rooms">
+            <button className="text-white px-8 py-3 text-lg rounded-lg transition bg-blue-800">
               View All Rooms
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

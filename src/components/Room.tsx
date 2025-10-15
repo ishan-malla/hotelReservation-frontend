@@ -31,7 +31,7 @@ const Room = () => {
               </p>
             </div>
 
-            <Link to="/room-">
+            <Link to="/room-display">
               <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition">
                 Book Now
               </button>
